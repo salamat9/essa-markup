@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Josefin Sans', 'sans-serif';
+}
+
+/* Header */
+.header {
+	height: 100px;
+	display: flex;
+	background-color: #ffe794;
+}
+
+.header-btn {
+	margin-left: 15px;
+	align-self: center;
+}
+
+.header-title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+
+	font-size: 38px;
+	font-weight: 500;
+	line-height: 3.8;
+}
+
+.header-title h2 {
+	margin-left: 15px;
+}
+
+/* Main layout */
+.layout {
+	display: flex;
+  height: 100vh;
+}
+
+/* Navbar */
+.nav {
+	max-width: 300px;
+	background-color: #fffbef;
+	/* background-color: teal; */
+}
+
+.nav-title {
+	padding: 25px 83px 20px;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.nav-title h2 {
+	margin-top: 25px;
+}
+
+.nav-btn {
+	margin-left: 21px;
+	padding: 14px 67px;
+	background-color: #d1c69e;
+	height: 50px;
+	border-radius: 8px;
+	border-width: 0;
+
+	font-family: 'Josefin Sans', 'sans-serif';
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 22px;
+	color: white;
+}
+
+.nav-item {
+	margin: 21px 21px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 254px;
+	height: 50px;
+	background-color: #f4d089;
+	border-radius: 8px;
+}
+
+.nav-item-img {
+	position: absolute;
+	right: 13px;
+}
+
+/* Todo page */
+.todo-page {
+	width: 100%;
+	background-color: #ffe1bd;
+}
+
+.todo-page h1 {
+	font-size: 42px;
+	padding-top: 27px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.todo-btn {
+  display: block;
+  width: 92%;
+  margin: 0 auto 27px;
+	height: 60px;
+	border-radius: 8px;
+	border-width: 0;
+	
+  font-family: 'Josefin Sans';
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 26px;
+	background-color: #f8ca94;
+	color: #000;
+}
+
+.todo-item {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding-top: 10px;
+  height: 90px;
+  width: 92%;
+  border-radius: 8px;
+  
+  font-size: 26px;
+  text-align: center;
+  background-color: #FAA136;
+}
+
+.todo-item p {
+  width: 98%;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  background-color: #FEFFDF;
+}
