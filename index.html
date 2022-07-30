@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-  
+
   <header class="header">
     <div class="header__button">
       <img src="./img/header/btn.svg" alt="=">
@@ -20,18 +22,90 @@
   </header>
 
   <div class="layout">
-    <nav class="nav">
-      <h2 class="nav-title">Projects</h2>
-      <button class="nav-btn">
-        New project
-      </button>
-      <div class="nav-item">
-        <p>Monday</p>
-        <img class="nav-item-img" src="./img/nav/nav-item.svg" alt="">
+    <nav class="sidebar">
+      <div class="create-group">
+        <h2 class="sidebar__title">
+          Projects
+        </h2>
+        <button class="sidebar__button">
+          New project
+        </button>
       </div>
-      <div class="nav-item">
+      <div class="sidebar__item">
+        <p>Monday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
         <p>Tuesday</p>
-        <img class="nav-item-img" src="./img/nav/nav-item.svg" alt="">
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
+      </div>
+      <div class="sidebar__item">
+        <p>Tuesday</p>
+        <img src="./img/nav/nav-item.svg" alt="">
       </div>
     </nav>
 
@@ -58,4 +132,15 @@
 
   </div>
 </body>
+
+
+<script>
+const sidebarToggler = document.querySelector('.header__button');
+const sidebar = document.querySelector('.sidebar');
+
+sidebarToggler.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+})
+
+</script>
 </html>
