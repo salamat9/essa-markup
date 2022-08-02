@@ -39,74 +39,6 @@
         <p>Tuesday</p>
         <img src="./img/nav/nav-item.svg" alt="">
       </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
-      <div class="sidebar__item">
-        <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
-      </div>
     </nav>
 
     <div class="todo-page">
@@ -114,7 +46,7 @@
         Monday
       </h1>
       <button class="todo-btn">
-        New Item
+        <a href="#popup">New Item</a>
       </button>
       <div class="todo-item">
         <h3>High Priority Item</h3>
@@ -131,16 +63,46 @@
     </div>
 
   </div>
+
+  <div id="popup" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <h2>Detail</h2>
+        <form class="popup__form">
+          <input placeholder="High Priority Item">
+          <input type="date">
+          <select name="" id="">
+            <option value="">High Priority</option>
+          </select>
+          <textarea name="" id="" rows="10"></textarea>
+          <a href="#" class="btn__save">
+            <img src="./img/btn/save.svg" alt="Save">
+            Save
+          </a>
+          <a href="#" class="btn__done">
+            <img src="./img/btn/done.svg" alt="Done">
+            Mark Done
+          </a>
+          <a href="#" class="btn__delete">
+            <img src="./img/btn/delete.svg" alt="Delete">
+            Delete
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 
 <script>
-const sidebarToggler = document.querySelector('.header__button');
-const sidebar = document.querySelector('.sidebar');
+  const sidebarToggler = document.querySelector('.header__button');
+  const sidebar = document.querySelector('.sidebar');
 
-sidebarToggler.addEventListener('click', () => {
-  sidebar.classList.toggle('active');
-})
+  sidebarToggler.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  })
 
 </script>
+
 </html>
