@@ -44,7 +44,7 @@ html {
   outline: 0;
 }
 
-.popup-form__btn-delete, .popup-form__btn-done, .popup-form__btn-save {
+.popup-form__btn_delete, .popup-form__btn_done, .popup-form__btn_save {
   height: 40px;
   width: 100%;
   margin-bottom: 10px;
@@ -126,15 +126,15 @@ a {
   background: rgba(123, 123, 123, 0.33);
 }
 
-.popup-form__btn-save {
+.popup-form__btn_save {
   background-color: #7fdb88;
 }
 
-.popup-form__btn-done {
+.popup-form__btn_done {
   background-color: #7e8bf9;
 }
 
-.popup-form__btn-delete {
+.popup-form__btn_delete {
   background-color: #ff5757;
   margin-bottom: 0;
 }
