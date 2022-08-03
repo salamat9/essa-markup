@@ -29,18 +29,22 @@ html {
   text-decoration: none;
 }
 
-.popup__form textarea, .popup__form select, .popup__form input {
+.popup-form__textarea, .popup-form__select, .popup-form__input {
   height: 40px;
   margin-bottom: 15px;
   border: none;
   border-bottom: 3px solid #635f5f;
-  background-color: #FFD7A7;
+  background-color: #ffd7a7;
   color: #585353;
   font-size: 20px;
   font-weight: 500;
 }
 
-.btn__delete, .btn__done, .btn__save {
+.popup-form__textarea:focus, .popup-form__select:focus, .popup-form__input:focus {
+  outline: 0;
+}
+
+.popup-form__btn-delete, .popup-form__btn-done, .popup-form__btn-save {
   height: 40px;
   width: 100%;
   margin-bottom: 10px;
@@ -71,7 +75,7 @@ a {
   transition: all 0.8s ease;
 }
 
-.popup:target .popup__content {
+.popup:target .popup-content {
   transform: translate(0px, 0px);
   opacity: 1;
 }
@@ -81,7 +85,7 @@ a {
   visibility: visible;
 }
 
-.popup__body {
+.popup-body {
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -89,46 +93,49 @@ a {
   padding: 30px 10px;
 }
 
-.popup__content {
+.popup-content {
   width: 720px;
   padding: 15px 20px;
   border-radius: 8px;
-  background-color: #FFD7A7;
+  background-color: #ffd7a7;
   color: #585353;
   transition: all 0.8s ease;
   opacity: 0;
   transform: translate(0px, -100%);
 }
-.popup__content h2 {
+
+.popup-content__header {
   text-align: center;
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 35px;
 }
 
-.popup__form input {
+.popup-form__input {
   width: 100%;
 }
-.popup__form select {
-  background-color: #FBB45F;
+
+.popup-form__select {
+  background-color: #fbb45f;
   width: 100%;
 }
-.popup__form textarea {
+
+.popup-form__textarea {
   height: 130px;
   min-width: 100%;
   background: rgba(123, 123, 123, 0.33);
 }
 
-.btn__save {
-  background-color: #7FDB88;
+.popup-form__btn-save {
+  background-color: #7fdb88;
 }
 
-.btn__done {
-  background-color: #7E8BF9;
+.popup-form__btn-done {
+  background-color: #7e8bf9;
 }
 
-.btn__delete {
-  background-color: #FF5757;
+.popup-form__btn-delete {
+  background-color: #ff5757;
   margin-bottom: 0;
 }
 

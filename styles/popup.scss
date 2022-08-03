@@ -1,113 +1,118 @@
-$bgColor: #FFD7A7;
+$bgColor: #ffd7a7;
 $fontColor: #585353;
 
 %input-shared {
-  height: 40px;
-  margin-bottom: 15px;
-  border: none;
-  border-bottom: 3px solid #635f5f;
-  background-color: $bgColor;
-  color: $fontColor;
-  font-size: 20px;
-  font-weight: 500;
+	height: 40px;
+	margin-bottom: 15px;
+	border: none;
+	border-bottom: 3px solid #635f5f;
+	background-color: $bgColor;
+	color: $fontColor;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+%input-shared:focus {
+	outline: 0;
 }
 
 %btn-shared {
-  height: 40px;
-  width: 100%;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: 500;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 a {
-  color: $fontColor;
-  text-decoration: none;
+	color: $fontColor;
+	text-decoration: none;
 }
 
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(33, 33, 33, 0.48);
-  opacity: 0;
-  visibility: hidden;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transition: all 0.8s ease;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(33, 33, 33, 0.48);
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.8s ease;
 }
 
-.popup:target .popup__content {
-  transform: translate(0px, 0px);
-  opacity: 1;
+.popup:target .popup-content {
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 
 .popup:target {
-  opacity: 1;
-  visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
 
-.popup__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
+.popup-body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
 }
 
-.popup__content {
-  width: 720px;
-  padding: 15px 20px;
-  border-radius: 8px;
-  background-color: $bgColor;
-  color: #585353;
-  transition: all 0.8s ease;
-  opacity: 0;
-  transform: translate(0px, -100%);
-  h2 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 35px;
-  }
+.popup-content {
+	width: 720px;
+	padding: 15px 20px;
+	border-radius: 8px;
+	background-color: $bgColor;
+	color: #585353;
+	transition: all 0.8s ease;
+	opacity: 0;
+	transform: translate(0px, -100%);
 }
 
-.popup__form {
-  input {
-    @extend %input-shared;
-    width: 100%;
-  }
-  select {
-    @extend %input-shared;
-    background-color: #FBB45F;
-    width: 100%;
-  }
-  textarea {
-    @extend %input-shared;
-    height: 130px;
-    min-width: 100%;
-    background: rgba(123, 123, 123, 0.33);
-  }
+.popup-content__header {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 500;
+	margin-bottom: 35px;
 }
 
-.btn__save {
- @extend %btn-shared;
- background-color: #7FDB88;
+.popup-form__input {
+	@extend %input-shared;
+	width: 100%;
 }
 
-.btn__done {
-  @extend %btn-shared;
-  background-color: #7E8BF9; 
+.popup-form__select {
+	@extend %input-shared;
+	background-color: #fbb45f;
+	width: 100%;
 }
 
-.btn__delete {
-  @extend %btn-shared;
-  background-color: #FF5757;
-  margin-bottom: 0;
+.popup-form__textarea {
+	@extend %input-shared;
+	height: 130px;
+	min-width: 100%;
+	background: rgba(123, 123, 123, 0.33);
+}
+
+.popup-form__btn-save {
+	@extend %btn-shared;
+	background-color: #7fdb88;
+}
+
+.popup-form__btn-done  {
+	@extend %btn-shared;
+	background-color: #7e8bf9;
+}
+
+.popup-form__btn-delete  {
+	@extend %btn-shared;
+	background-color: #ff5757;
+	margin-bottom: 0;
 }
