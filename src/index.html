@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.scss">
 </head>
 
 <body>
 
   <header class="header">
     <div class="header__button">
-      <img src="./img/header/btn.svg" alt="=">
+      <img src="~/images/header/btn.svg" alt="sidebar">
     </div>
     <div class="header__title">
-      <img src="./img/header/logo.svg" alt="logo">
+      <img src="./images/header/logo.svg" alt="logo">
       <h2>Your Todo</h2>
     </div>
   </header>
@@ -33,11 +33,11 @@
       </div>
       <div class="sidebar__item">
         <p>Monday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
+        <img src="./images/nav/nav-item.svg" alt="">
       </div>
       <div class="sidebar__item">
         <p>Tuesday</p>
-        <img src="./img/nav/nav-item.svg" alt="">
+        <img src="./images/nav/nav-item.svg" alt="">
       </div>
     </nav>
 
@@ -76,15 +76,15 @@
           </select>
           <textarea class="popup-form__textarea" name="" id="" rows="10"></textarea>
           <a href="#" class="popup-form__btn_save">
-            <img src="./img/btn/save.svg" alt="Save">
+            <img src="./images/btn/save.svg" alt="Save">
             Save
           </a>
           <a href="#" class="popup-form__btn_done">
-            <img src="./img/btn/done.svg" alt="Done">
+            <img src="./images/btn/done.svg" alt="Done">
             Mark Done
           </a>
           <a href="#" class="popup-form__btn_delete">
-            <img src="./img/btn/delete.svg" alt="Delete">
+            <img src="./images/btn/delete.svg" alt="Delete">
             Delete
           </a>
         </form>
@@ -93,16 +93,4 @@
   </div>
 
 </body>
-
-
-<script>
-  const sidebarToggler = document.querySelector('.header__button');
-  const sidebar = document.querySelector('.sidebar');
-
-  sidebarToggler.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
-  })
-
-</script>
-
 </html>
