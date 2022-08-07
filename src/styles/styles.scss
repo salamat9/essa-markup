@@ -138,55 +138,46 @@ body {
   }
 }
 
-/* Todo page */
-.todo-page {
+.todos {
   width: 100%;
   background-color: #ffe1bd;
-}
 
-.todo-page h1 {
-  font-size: 42px;
-  padding-top: 27px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-}
+  &__title {
+    font-size: 4.2rem;
+    padding-top: 2.7rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
 
-.todo-btn {
-  display: block;
-  width: 92%;
-  margin: 0 auto 27px;
-  height: 60px;
-  border-radius: 8px;
-  border-width: 0;
+  &__button {
+    display: block;
+    width: 92%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 2.6rem;
+    background: #f8ca94;
+    color: #000;
+  }
 
-  font-family: 'Josefin Sans';
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 26px;
-  background-color: #f8ca94;
-  color: #000;
-}
+  &__item {
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+    padding: 1.5rem;
+    width: 92%;
+    border-radius: 8px;
 
-.todo-item {
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding-top: 10px;
-  height: 90px;
-  width: 92%;
-  border-radius: 8px;
+    font-size: 2.6rem;
+    text-align: center;
+    background-color: #faa136;
 
-  font-size: 26px;
-  text-align: center;
-  background-color: #faa136;
-}
-
-.todo-item p {
-  width: 98%;
-  margin: 0 auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  border-radius: 8px;
-  background-color: #feffdf;
+    > p {
+      width: 98%;
+      margin: 0 auto;
+      padding: 0.5rem;
+      border-radius: 8px;
+      background-color: #feffdf;
+    }
+  }
 }
